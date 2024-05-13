@@ -1,0 +1,15 @@
+    <div
+            hx-post="api/card/confirmation_paiment/"
+            hx-include="this"
+            hx-trigger="load"
+            hx-target="this"
+     >
+     <input type="hidden" id="piTotal"
+      value="{{ pi_data.total }}" name="total"/>
+     <input type="hidden" id="piTagId" value="{{ pi_data.uuid }}"
+      name="uuid"/>
+     <input type="hidden" id="piConfirm"
+      value="{{ pi_data.device_confirm_paiment }}"
+      name="device_confirm_paiment"/>
+
+</div>

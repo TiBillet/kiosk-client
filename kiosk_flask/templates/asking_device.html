@@ -1,0 +1,11 @@
+<div class="col-10"
+    hx-post="http://127.0.0.2:6997/wait_device_paiment/"
+    hx-include="this"
+    hx-trigger="load delay:4s"
+    hx-target="this"
+    >
+    <input type="hidden" id="uuidFlask" name="uuid"
+     value="{{ pi_data.uuid }}"/>
+    <input type="hidden" id="totalFlask" name="total"
+     value="{{ pi_data.total }}"/>
+</div>
